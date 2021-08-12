@@ -1,6 +1,5 @@
 set(CMAKE_CXX_STANDARD 17)
 #set(CMAKE_CXX_FLAGS "-Wall -fpermissive -g")
-set(CMAKE_CXX_FLAGS "-Wall -g")
 #set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
 #set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/$<IF:$<CONFIG:Debug>,Debug,Release>/chapter06")
 

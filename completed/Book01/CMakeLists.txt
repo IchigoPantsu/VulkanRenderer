@@ -1,11 +1,5 @@
 set(CMAKE_CXX_STANDARD 17)
 #set(CMAKE_CXX_FLAGS "-Wall -fpermissive -g")
-set(CMAKE_CXX_FLAGS
-  #"-Wall"
-  "-g -v"
-  #"-g"
-  #"-v"
-)
 #set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
 #set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/$<IF:$<CONFIG:Debug>,Debug,Release>/chapter06")
 
@@ -15,8 +9,8 @@ file(GLOB BASE_CODE_PHYSICS
 #${PROJECT_SOURCE_DIR}/code/Physics/Body.h
 #${PROJECT_SOURCE_DIR}/code/Physics/Broadphase.cpp
 #${PROJECT_SOURCE_DIR}/code/Physics/Broadphase.h
-#${PROJECT_SOURCE_DIR}/code/Physics/Constraints.cpp
-#${PROJECT_SOURCE_DIR}/code/Physics/Constraints.h
+${PROJECT_SOURCE_DIR}/code/Physics/Constraints.cpp
+${PROJECT_SOURCE_DIR}/code/Physics/Constraints.h
 #${PROJECT_SOURCE_DIR}/code/Physics/Contact.cpp
 #${PROJECT_SOURCE_DIR}/code/Physics/Contact.h
 #${PROJECT_SOURCE_DIR}/code/Physics/GJK.cpp
@@ -121,14 +115,16 @@ file(GLOB ENGINE_FILES
 #Physics
 #${PROJECT_SOURCE_DIR}/code/Physics/Body.cpp
 #${PROJECT_SOURCE_DIR}/code/Physics/Body.h
-.${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Body.cpp
-.${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Body.h
+${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Body.cpp
+${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Body.h
 #${PROJECT_SOURCE_DIR}/code/Physics/Broadphase.cpp
 #${PROJECT_SOURCE_DIR}/code/Physics/Broadphase.h
 ${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Broadphase.cpp
 ${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Broadphase.h
-#${PROJECT_SOURCE_DIR}/code/Physics/Constraints.cpp
-#${PROJECT_SOURCE_DIR}/code/Physics/Constraints.h
+${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Constraints.cpp
+${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Constraints.h
+#${PROJECT_SOURCE_DIR}/code/Physics/Contact.cpp
+#${PROJECT_SOURCE_DIR}/code/Physics/Contact.h
 ${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Contact.cpp
 ${PROJECT_SOURCE_DIR}/completed/Book01/Physics/Contact.h
 #${PROJECT_SOURCE_DIR}/code/Physics/GJK.cpp

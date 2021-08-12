@@ -68,7 +68,7 @@ typedef union _LARGE_INTEGER {
   LONGLONG QuadPart;
 } LARGE_INTEGER, *PLARGE_INTEGER;
 
-static std::chrono::system_clock::time_point  start;
+static std::chrono::system_clock::time_point start;
 int GetTimeMicroseconds() {
 	 std::chrono::system_clock::time_point  /*start,*/ end; 
 	// 型は auto で可
