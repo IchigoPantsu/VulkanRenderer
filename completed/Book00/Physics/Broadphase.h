@@ -1,6 +1,8 @@
 //
 //	Broadphase.h
 //
+#ifndef PHYSICS_BROADPHASE_H
+#define PHYSICS_BROADPHASE_H
 #pragma once
 #include "Body.h"
 #include <vector>
@@ -19,3 +21,4 @@ struct collisionPair_t {
 };
 
 void BroadPhase( const Body * bodies, const int num, std::vector< collisionPair_t > & finalPairs, const float dt_sec );
+#endif//PHYSICS_BROADPHASE_H

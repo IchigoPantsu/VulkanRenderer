@@ -1,7 +1,10 @@
 //
 //	Body.h
 //
+#ifndef PHYSICS_BODY_H
+#define PHYSICS_BODY_H
 #pragma once
+
 #include "../Math/Vector.h"
 #include "../Math/Quat.h"
 #include "../Math/Matrix.h"
@@ -25,3 +28,5 @@ public:
 
 	Shape *		m_shape;
 };
+
+#endif//PHYSICS_BODY_H 

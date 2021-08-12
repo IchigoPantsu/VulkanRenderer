@@ -1,10 +1,15 @@
 //
 //  Pipeline.h
 //
+#ifndef RENDERER_PIPELINE_H
+#define RENDERER_PIPELINE_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include "Descriptor.h"
 #include "Buffer.h"
+
+#include <stdio.h>
+#include <string.h>
 
 class DeviceContext;
 class FrameBuffer;
@@ -67,3 +72,4 @@ public:
 	VkPipelineLayout m_vkPipelineLayout;
 	VkPipeline m_vkPipeline;
 };
+#endif//RENDERER_PIPELINE_H

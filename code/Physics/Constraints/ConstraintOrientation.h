@@ -1,6 +1,8 @@
 //
 //	ConstraintOrientation.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTORIENTATION_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTORIENTATION_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -24,3 +26,4 @@ public:
 
 	float m_baumgarte;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTORIENTATION_H

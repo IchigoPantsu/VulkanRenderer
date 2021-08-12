@@ -1,6 +1,8 @@
 //
 //	ConstraintBase.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTBASE_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTBASE_H
 #pragma once
 #include "../../Math/Vector.h"
 #include "../../Math/Quat.h"
@@ -100,3 +102,4 @@ inline Mat4 Constraint::Right( const Quat & q ) {
 
 	return R.Transpose();
 }
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTBASE_H

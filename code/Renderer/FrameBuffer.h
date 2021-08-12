@@ -1,6 +1,8 @@
 //
 //  FrameBuffer.h
 //
+#ifndef RENDERER_FRAMEBUFFER_H
+#define RENDERER_FRAMEBUFFER_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include "Image.h"
@@ -41,3 +43,4 @@ public:
 private:
 	bool CreateRenderPass( DeviceContext * device );
 };
+#endif//RENDERER_FRAMEBUFFER_H

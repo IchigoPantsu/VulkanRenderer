@@ -1,6 +1,8 @@
 //
 //  DeviceContext.h
 //
+#ifndef RENDERER_DEVICECONTEXT_H
+#define RENDERER_DEVICECONTEXT_H
 #pragma once
 #include "SwapChain.h"
 #include <vector>
@@ -106,3 +108,4 @@ public:
 
 	int GetAligendUniformByteOffset( const int offset ) const;
 };
+#endif//RENDERER_DEVICECONTEXT_H

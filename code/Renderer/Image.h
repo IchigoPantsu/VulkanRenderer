@@ -1,6 +1,8 @@
 //
 //  Image.h
 //
+#ifndef RENDERER_IMAGE_H
+#define RENDERER_IMAGE_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include "DeviceContext.h"
@@ -35,3 +37,4 @@ public:
 
 	VkImageLayout	m_vkImageLayout;
 };
+#endif//RENDERER_IMAGE_H

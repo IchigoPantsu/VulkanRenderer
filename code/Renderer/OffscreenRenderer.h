@@ -1,6 +1,8 @@
 //
 //  OffscreenRenderer.h
 //
+#ifndef RENDERER_OFFSCREENRENDERER_H
+#define RENDERER_OFFSCREENRENDERER_H
 #pragma once
 
 class DeviceContext;
@@ -11,3 +13,4 @@ bool InitOffscreen( DeviceContext * device, int width, int height );
 bool CleanupOffscreen( DeviceContext * device );
 
 void DrawOffscreen( DeviceContext * device, int cmdBufferIndex, Buffer * uniforms, const RenderModel * renderModels, const int numModels );
+#endif//RENDERER_OFFSCREENRENDERER_H

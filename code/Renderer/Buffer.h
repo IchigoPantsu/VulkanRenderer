@@ -1,6 +1,8 @@
 //
 //  Buffer.h
 //
+#ifndef RENDERER_BUFFER_H
+#define RENDERER_BUFFER_H
 #pragma once
 #include "DeviceContext.h"
 
@@ -28,3 +30,4 @@ public:
 	VkDeviceSize	m_vkBufferSize;
 	VkMemoryPropertyFlags m_vkMemoryPropertyFlags;
 };
+#endif//RENDERER_BUFFER_H

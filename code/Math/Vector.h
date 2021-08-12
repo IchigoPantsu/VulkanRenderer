@@ -1,6 +1,8 @@
 //
 //	Vector.h
 //
+#ifndef MATH_VECTOR_H
+#define MATH_VECTOR_H
 #pragma once
 #include <math.h>
 #include <assert.h>
@@ -774,3 +776,4 @@ inline void VecN::Zero() {
 		data[ i ] = 0.0f;
 	}
 }
+#endif//MATH_VECTOR_H

@@ -1,6 +1,8 @@
 //
 //	ShapeBase.h
 //
+#ifndef PHYSICS_SHAPES_SHAPEBASE_H
+#define PHYSICS_SHAPES_SHAPEBASE_H
 #pragma once
 #include "../../Math/Vector.h"
 #include "../../Math/Quat.h"
@@ -36,3 +38,4 @@ public:
 protected:
 	Vec3 m_centerOfMass;
 };
+#endif//PHYSICS_SHAPES_SHAPEBASE_H

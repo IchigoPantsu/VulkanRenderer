@@ -1,6 +1,8 @@
 //
 //	Quat.h
 //
+#ifndef MATH_QUAT_H
+#define MATH_QUAT_H
 #pragma once
 #include "Vector.h"
 #include "Matrix.h"
@@ -180,3 +182,4 @@ inline Mat3 Quat::ToMat3() const {
 	mat.rows[ 2 ] = RotatePoint( mat.rows[ 2 ] );
 	return mat;
 }
+#endif//MATH_QUAT_H

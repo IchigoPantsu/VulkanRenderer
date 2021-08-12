@@ -1,6 +1,8 @@
 //
 //	ConstraintPenetration.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTPENETRATION_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTPENETRATION_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -28,3 +30,4 @@ public:
 	float m_baumgarte;
 	float m_friction;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTPENETRATION_H

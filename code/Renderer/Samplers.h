@@ -1,6 +1,8 @@
 //
 //  Samplers.h
 //
+#ifndef RENDERER_SAMPLERS_H
+#define RENDERER_SAMPLERS_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include "DeviceContext.h"
@@ -18,3 +20,4 @@ public:
 	static VkSampler m_samplerStandard;
 	static VkSampler m_samplerDepth;
 };
+#endif//RENDERER_SAMPLERS_H

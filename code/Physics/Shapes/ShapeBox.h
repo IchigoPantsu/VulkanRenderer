@@ -1,6 +1,8 @@
 //
 //	ShapeBox.h
 //
+#ifndef PHYSICS_PHYSICS_SHAPES_SHAPEBOX_H
+#define PHYSICS_PHYSICS_SHAPES_SHAPEBOX_H
 #pragma once
 #include "ShapeBase.h"
 
@@ -31,3 +33,4 @@ public:
 	std::vector< Vec3 > m_points;
 	Bounds m_bounds;
 };
+#endif//PHYSICS_PHYSICS_SHAPES_SHAPEBOX_H

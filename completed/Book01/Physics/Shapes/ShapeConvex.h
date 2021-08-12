@@ -1,6 +1,8 @@
 //
 //	ShapeConvex.h
 //
+#ifndef PHYSICS_SHAPE_SHAPECONVEX_H
+#define PHYSICS_SHAPE_SHAPECONVEX_H
 #pragma once
 #include "ShapeBase.h"
 
@@ -49,3 +51,4 @@ public:
 	Bounds m_bounds;
 	Mat3 m_inertiaTensor;
 };
+#endif//PHYSICS_SHAPE_SHAPECONVEX_H

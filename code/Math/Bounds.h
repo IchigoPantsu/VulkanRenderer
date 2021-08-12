@@ -1,6 +1,8 @@
 //
 //	Bounds.h
 //
+#ifndef MATH_BOUNDS_H
+#define MATH_BOUNDS_H
 #pragma once
 #include <math.h>
 #include <assert.h>
@@ -33,3 +35,4 @@ public:
 	Vec3 mins;
 	Vec3 maxs;
 };
+#endif//MATH_BOUNDS_H

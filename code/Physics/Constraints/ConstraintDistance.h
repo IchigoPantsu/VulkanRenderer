@@ -1,6 +1,8 @@
 //
 //	ConstraintDistance.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTDISTANCE_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTDISTANCE_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -28,3 +30,4 @@ private:
 	VecN m_cachedLambda;
 	float m_baumgarte;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTDISTANCE_H

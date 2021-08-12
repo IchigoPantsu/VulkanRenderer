@@ -1,6 +1,8 @@
 //
 //  application.h
 //
+#ifndef APPLICATION_H
+#define APPLICATION_H
 #pragma once
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
@@ -93,3 +95,4 @@ private:
 };
 
 extern Application * g_application;
+#endif//APPLICATION_H

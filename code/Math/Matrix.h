@@ -1,6 +1,8 @@
 //
 //	Matrix.h
 //
+#ifndef MATH_MATRIX_H
+#define MATH_MATRIX_H
 #pragma once
 #include "Vector.h"
 
@@ -765,3 +767,4 @@ inline MatN MatN::operator * ( const MatN & rhs ) {
 
 	return tmp;
 }
+#endif//MATH_MATRIX_H

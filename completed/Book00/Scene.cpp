@@ -33,6 +33,10 @@ Scene::Reset
 */
 void Scene::Reset() {
 	for ( int i = 0; i < m_bodies.size(); i++ ) {
+//インクルードディレクトリについて①カレントディレクトリを検索②インクルードオプションを検索③．．．
+//なのでBody.hについて①の時点でcode/Physics/Body.hがApplication.hでインクルードされ，インクルードガードによって本来のインクルード対象であるcompleted/Book00/Physics/Body.hは無視される．
+//その結果，Bodyが不正な型情報となりScene.cppでBodyを操作するとセグメンテーション違反で落ちる
+//解決策はビルド時にファイルをコピーしてくるか,インクルードを"Physics/Body.h"-><Physics/Body.h>で書き換える？．．．
 		delete m_bodies[ i ].m_shape;
 	}
 	m_bodies.clear();

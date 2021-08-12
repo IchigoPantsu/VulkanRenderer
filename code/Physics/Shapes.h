@@ -1,6 +1,8 @@
 //
 //	Shapes.h
 //
+#ifndef PHYSICS_SHAPES_H
+#define PHYSICS_SHAPES_H
 #pragma once
 #include "Shapes/ShapeSphere.h"
 #include "Shapes/ShapeBox.h"
@@ -18,3 +20,4 @@ extern Vec3 g_boxLimb[ 8 ];
 extern Vec3 g_boxHead[ 8 ];
 extern Vec3 g_diamond[ 7 * 8 ];
 void FillDiamond();
+#endif//PHYSICS_SHAPES_H

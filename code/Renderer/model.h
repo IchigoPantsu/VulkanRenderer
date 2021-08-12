@@ -1,6 +1,8 @@
 //
 //  model.h
 //
+#ifndef RENDERER_MODEL_H
+#define RENDERER_MODEL_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include <vector>
@@ -106,3 +108,4 @@ struct RenderModel {
 	Vec3 pos;
 	Quat orient;
 };
+#endif//MODEL_H

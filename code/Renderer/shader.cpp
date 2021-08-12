@@ -54,7 +54,13 @@ bool Shader::Load( DeviceContext * device, const char * name ) {
 
 		// Try loading the spirv code first
 		char nameSpirv[ 1024 ];
+#if WIN32
 		sprintf_s( nameSpirv, 1024, "data/shaders/spirv/%s.%s.spirv", name, fileExtensions[ i ] );
+#else
+		sprintf( nameSpirv, 
+						//1024, 
+						"data/shaders/spirv/%s.%s.spirv", name, fileExtensions[ i ] );
+#endif
 		if ( GetFileData( nameSpirv, &code, size ) ) {
 			m_vkShaderModules[ i ] = Shader::CreateShaderModule( device->m_vkDevice, (char*)code, size );
 			continue;

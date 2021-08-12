@@ -1,6 +1,8 @@
 //
 //	Manifold.h
 //
+#ifndef PHYSICS_MANIFOLD_H
+#define PHYSICS_MANIFOLD_H
 #pragma once
 #include "Body.h"
 #include "Constraints.h"
@@ -60,3 +62,4 @@ public:
 public:
 	std::vector< Manifold > m_manifolds;
 };
+#endif//PHYSICS_MANIFOLD_H

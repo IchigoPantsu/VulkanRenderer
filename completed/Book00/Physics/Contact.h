@@ -1,6 +1,8 @@
 //
 //	Contact.h
 //
+#ifndef PHYSICS_CONTACT_H
+#define PHYSICS_CONTACT_H
 #pragma once
 #include "Body.h"
 
@@ -20,3 +22,4 @@ struct contact_t {
 };
 
 void ResolveContact( contact_t & contact );
+#endif//PHYSICS_CONTACT_H

@@ -1,6 +1,8 @@
 //
 //  Descriptor.h
 //
+#ifndef RENDERER_DISCRIPTER_H
+#define RENDERER_DISCRIPTER_H
 #pragma once
 #include <vulkan/vulkan.h>
 
@@ -15,6 +17,7 @@ struct RenderModel;
 Descriptor
 ====================================================
 */
+class Descriptors;
 class Descriptor {
 public:
 	Descriptor();
@@ -78,3 +81,4 @@ public:
 		return descriptor;
 	}
 };
+#endif//RENDERER_DISCRIPTER_H

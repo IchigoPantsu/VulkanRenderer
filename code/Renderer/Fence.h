@@ -1,6 +1,8 @@
 //
 //  Fence.h
 //
+#ifndef RENDERER_FENCE_H
+#define RENDERER_FENCE_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include "DeviceContext.h"
@@ -23,3 +25,4 @@ private:
 
 	DeviceContext * m_device;
 };
+#endif//RENDERER_FENCE_H

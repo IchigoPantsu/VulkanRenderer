@@ -1,6 +1,8 @@
 //
 //	ConstraintHinge.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTHINGE_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTHINGE_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -54,3 +56,4 @@ public:
 	bool m_isAngleViolated;
 	float m_relativeAngle;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTHINGE_H

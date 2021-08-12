@@ -1,6 +1,9 @@
 //
 //	Body.h
 //
+#ifndef PHYSICS_BODY_H
+#define PHYSICS_BODY_H
+
 #pragma once
 #include "../Math/Vector.h"
 #include "../Math/Quat.h"
@@ -45,3 +48,5 @@ public:
 
 	void Update( const float dt_sec );
 };
+
+#endif//PHYSICS_BODY_H 

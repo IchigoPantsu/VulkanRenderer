@@ -1,6 +1,8 @@
 //
 //	ShapeSphere.h
 //
+#ifndef PHYSICS_PHYSICS_SHAPES_SHAPESPHERE_H
+#define PHYSICS_PHYSICS_SHAPES_SHAPESPHERE_H
 #pragma once
 #include "ShapeBase.h"
 
@@ -27,3 +29,4 @@ public:
 public:
 	float m_radius;
 };
+#endif//PHYSICS_PHYSICS_SHAPES_SHAPESPHERE_H

@@ -20,17 +20,13 @@
 Application * g_application = NULL;
 
 #include <time.h>
-#include <windows.h>
 
 static bool gIsInitialized( false );
+#ifdef  _WIN32
+#include <windows.h>
 static unsigned __int64 gTicksPerSecond;
 static unsigned __int64 gStartTicks;
 
-/*
-====================================
-GetTimeSeconds
-====================================
-*/
 int GetTimeMicroseconds() {
 	if ( false == gIsInitialized ) {
 		gIsInitialized = true;
@@ -52,6 +48,51 @@ int GetTimeMicroseconds() {
 	const unsigned __int64 timeMicro = (unsigned __int64)( (double)( tick - gStartTicks ) / ticks_per_micro );
 	return (int)timeMicro;
 }
+
+#else
+
+#include <stdint.h>
+typedef uint8_t BYTE;
+typedef uint32_t DWORD;
+typedef int32_t LONG;
+typedef int64_t LONGLONG;
+typedef union _LARGE_INTEGER {
+  struct {
+    DWORD LowPart;
+    LONG  HighPart;
+  };
+  struct {
+    DWORD LowPart;
+    LONG  HighPart;
+  } u;
+  LONGLONG QuadPart;
+} LARGE_INTEGER, *PLARGE_INTEGER;
+
+static std::chrono::system_clock::time_point  start;
+int GetTimeMicroseconds() {
+	 std::chrono::system_clock::time_point  /*start,*/ end; 
+	// 型は auto で可
+	if ( false == gIsInitialized ) {
+		gIsInitialized = true;
+	 	// 計測開始時間
+ 	 	start = std::chrono::system_clock::now(); 
+	 }
+	 // 処理
+	 // 計測終了時間
+ 	 end = std::chrono::system_clock::now();  
+	 //処理に要した時間をミリ秒に変換
+ 	 return (uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count(); 
+}
+#endif
+
+
+
+/*
+====================================
+GetTimeSeconds
+====================================
+*/
+
 
 /*
 ========================================================================================================

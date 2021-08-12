@@ -1,6 +1,8 @@
 //
 //  shader.h
 //
+#ifndef RENDERER_SHADER_H
+#define RENDERER_SHADER_H
 #pragma once
 #include "DeviceContext.h"
 #include "Pipeline.h"
@@ -49,3 +51,4 @@ public:
 	//
 	VkShaderModule m_vkShaderModules[ SHADER_STAGE_NUM ];
 };
+#endif//RENDERER_SHADER_H

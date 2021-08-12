@@ -1,6 +1,8 @@
 //
 //  SwapChain.h
 //
+#ifndef RENDERER_SWAPCHAIN_H
+#define RENDERER_SWAPCHAIN_H
 #pragma once
 #include <vulkan/vulkan.h>
 #include <vector>
@@ -47,3 +49,4 @@ public:
 
 	VkRenderPass m_vkRenderPass;
 };
+#endif//RENDERER_SWAPCHAIN_H

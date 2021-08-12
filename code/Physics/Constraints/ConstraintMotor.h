@@ -1,6 +1,8 @@
 //
 //	ConstraintMotor.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTMOTOR_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTMOTOR_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -28,3 +30,4 @@ public:
 
 	Vec3 m_baumgarte;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTMOTOR_H

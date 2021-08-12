@@ -1,6 +1,8 @@
 //
 //  Scene.h
 //
+#ifndef SCENE_H
+#define SCENE_H
 #pragma once
 #include <vector>
 
@@ -27,4 +29,4 @@ public:
 	std::vector< Constraint * >	m_constraints;
 	ManifoldCollector m_manifolds;
 };
-
+#endif//SCENE_H

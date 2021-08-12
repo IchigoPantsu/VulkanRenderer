@@ -5,6 +5,10 @@
 #include "DeviceContext.h"
 #include "../Fileio.h"
 #include <assert.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdexcept>
+#include <limits>
 
 /*
 ====================================================

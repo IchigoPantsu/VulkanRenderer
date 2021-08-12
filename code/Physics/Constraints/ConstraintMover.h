@@ -1,6 +1,8 @@
 //
 //	ConstraintMover.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTMOVER_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTMOVER_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -17,3 +19,4 @@ public:
 
 	float m_time;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTMOVER_H

@@ -1,6 +1,8 @@
 //
 //	ConstraintConstantVelocity.h
 //
+#ifndef PHYSICS_CONSTRAINTS_CONSTRAINTVELOCITY_H
+#define PHYSICS_CONSTRAINTS_CONSTRAINTVELOCITY_H
 #pragma once
 #include "ConstraintBase.h"
 
@@ -58,3 +60,4 @@ public:
 	float m_angleU;
 	float m_angleV;
 };
+#endif//PHYSICS_CONSTRAINTS_CONSTRAINTVELOCITY_H
